@@ -8,7 +8,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" rel="stylesheet" type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,300italic|Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/generic-styles.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+	<link rel="stylesheet" href="css/generic-styles.css">
     <link rel="stylesheet" href="css/headerfooter.css">
     <link rel="stylesheet" href="css/cards.css">
 
@@ -40,45 +41,366 @@
 <section class="main-container">
 
     <div class="container">
-        <article>
-            <div class="card">
-                <div class="book-header">
-                    <h1>Book Title</h1>
-                    <p>
-                        <span class="author">by <a href="#" rel="author">John Doe</a></span>
-                        <span class="pub-date">Published on <data itemprop="datePublished" value="2016">2016</data></span>
-                        <span class="edition">4th edition</span>
-                    </p>
+    	<div class="card_icons_container">
+    		<div class="card_container">
+    			<div class="content_container">
+    				<!--container for book title and author-->
+    				<div class="heading_container">
+    					<div class="heading_text_wrapper">
+    						<div class="heading_text">Eloquent JavaScript: 
+    						</br>
+    						A Modern Introduction to Programming</div>	
+    						<div class="heading_text_small">by <span class="blue_menu_text">Marijn Haverbeke</span>  <span class='follow_btn'>Follow</span>
+    						<span class="heading_grey" >Published on 2015</span><span class="heading_grey">2nd Edition</span></div>					
+    					</div>
+    				</div>
+    				<div class="description_container">
+    					<div class="description_wrapper">
+    						<p style="">
+    						JavaScript lies at the heart of almost every modern web application. From social apps to
+    						the newest browser based games. Though simple for beginners to pick up and play with, JavaScript is a flexible complex language that you can use to build full scale applications.
+    						</p>
+    						<p style="">
+    						Eloquent JavaScript, 2nd edition dives deep into the JavaScript language to write beautiful, effective code.
+    						</p>
+    						<a href="#" id="read_more"class="blue_menu_text">Read more</a>
+    					</div>
+    				</div>
+    				<div class="ratings_container">
+    				   <div class="ratings">
+    						<div class="progress_bar_container" id="orange_text">
+    							<div class="ratings_left" >Easy to follow</div> 
+    							<div class="ratings_right">80%</div>	
+    							<div class="progress_bar"><div class='meter' ><span style="width: 80%" id="orange_bar"></div></span></div>
+    						</div>
+    						<div class="progress_bar_container" id="green_text">
+    							<div class="ratings_left" >Comprehensive</div> 
+    							<div class="ratings_right">75%</div>	
+    							<div class="progress_bar"><div class='meter'><span style="width: 75%" id="green_bar"></div></span></div>
+    						</div>
+    						<div class="progress_bar_container" id="blue_text">
+    							<div class="ratings_left" >Enough examples</div> 
+    							<div class="ratings_right">95%</div>	
+    							<div class="progress_bar"><div class='meter'><span style="width: 95%" id="blue_bar"></div></span></div>
+    						</div>
+    				   </div>
+    				   
+    				   <div class="book_menu">
+    						<div class="menu_item_container menu_item_underline blue_menu_text">
+    							<div class="ratings_left" >Rate the Book</div> 
+    							<div class="ratings_right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>	
+    						</div>
+    						
+    						<div class="menu_item_container menu_item_underline blue_menu_text" >
+    							<div class="ratings_left" >Table of Contents</div> 
+    							<div class="ratings_right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>	
+    						</div>
+    						
+    						<div class="menu_item_container blue_menu_text">
+    							<div class="ratings_left" >Search Inside</div> 
+    							<div class="ratings_right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>	
+    						</div>
+    				   </div>
+    				</div>
+    			</div>
+    			<div class="img_container">
+    				<img class="book_img" src="images/eloquent_javascript.png" alt="Eloquent Javascript">
+    			</div>
+    			
+    		</div>
+            <div class="icon_bar">
+                <div >
+                    <a href="http://amazon.com">
+                        <div class='icon_container'>
+                            <img src="images/gumroad.png" alt="" class='icon_img'><div class='icon_price'> $28.40</div>
+                        </div>
+                    </a>
                 </div>
-                <div class="book-summary"></div>
-                <div class="book-info-links"></div>
-                <div class="book-cover"></div>
+                <div>
+                    <a href="http://amazon.com" >
+                        <div class='icon_container'>
+                            <img src="images/amazon.png" alt="" class='icon_img'><div class='icon_price'> $29.65</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="http://amazon.com">
+                        <div class='icon_container'>
+                            <img src="images/manning.png" alt="" class='icon_img'><div class='icon_price'> $28.70</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bookmark-it"><i class="material-icons">library_books</i><br>Bookmark It</div>
             </div>
-            <div class="buy-now-btns">
-                <div class="store-btn">
-                    <div class="store-logo"></div>
-                    <span class="webaim-text-hide">Gumroad</span>
-                    <span class="price-offer">$26.30</span>
+    	</div> <!-- /End book container -->
+		
+		
+        <div class="card_icons_container">
+            <div class="card_container">
+                <div class="content_container">
+                    <!--container for book title and author-->
+                    <div class="heading_container">
+                        <div class="heading_text_wrapper">
+                            <div class="heading_text">Javascript and JQuery: Interactive Front-End 
+                            </br>
+                            Web Development</div>  
+                            <div class="heading_text_small">by <span class="blue_menu_text">Marijn Haverbeke</span>  <span class='follow_btn'>Follow</span>
+                            <span class="heading_grey" >Published on 2016</span><span class="heading_grey">1st Edition</span></div>                 
+                        </div>
+                    </div>
+                    <div class="description_container">
+                        <div class="description_wrapper">
+                            <p style="">
+							In JavaScript & jQuery renowned author Jon Duckett dis-cards the traditional programming book template and approaches writing code in a more relevant, 
+							less intimidating way.
+                            </p>
+                            <p style="">
+                            Full-color and packed with instructional graphics and photos, his books have gained a loyal following by illustrating programming in a way both instructive for newcomers and invaluable for seasoned coders.
+                            </p>
+                            <a href="#" id="read_more"class="blue_menu_text">Read more</a>
+                        </div>
+                    </div>
+                    <div class="ratings_container">
+                       <div class="ratings">
+                            <div class="progress_bar_container" id="orange_text">
+                                <div class="ratings_left" >Easy to follow</div> 
+                                <div class="ratings_right">80%</div>    
+                                <div class="progress_bar"><div class='meter' ><span style="width: 80%" id="orange_bar"></div></span></div>
+                            </div>
+                            <div class="progress_bar_container" id="green_text">
+                                <div class="ratings_left" >Comprehensive</div> 
+                                <div class="ratings_right">75%</div>    
+                                <div class="progress_bar"><div class='meter'><span style="width: 75%" id="green_bar"></div></span></div>
+                            </div>
+                            <div class="progress_bar_container" id="blue_text">
+                                <div class="ratings_left" >Enough examples</div> 
+                                <div class="ratings_right">95%</div>    
+                                <div class="progress_bar"><div class='meter'><span style="width: 95%" id="blue_bar"></div></span></div>
+                            </div>
+                       </div>
+                       
+                       <div class="book_menu">
+                            <div class="menu_item_container menu_item_underline blue_menu_text">
+                                <div class="ratings_left" >Rate the Book</div> 
+                                <div class="ratings_right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>   
+                            </div>
+                            
+                            <div class="menu_item_container menu_item_underline blue_menu_text" >
+                                <div class="ratings_left" >Table of Contents</div> 
+                                <div class="ratings_right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>   
+                            </div>
+                            
+                            <div class="menu_item_container blue_menu_text">
+                                <div class="ratings_left" >Search Inside</div> 
+                                <div class="ratings_right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>   
+                            </div>
+                       </div>
+                    </div>
                 </div>
-                <div class="store-btn">
-                    <div class="store-logo"></div>
-                    <span class="webaim-text-hide">amazon.com</span>
-                    <span class="price-offer">$26.30</span>
-
+                <div class="img_container">
+                    <img class="book_img" src="images/javascript_jq.png" alt="Eloquent Javascript">
                 </div>
-                <div class="store-btn">
-                    <div class="store-logo"></div>
-                    <span class="webaim-text-hide">publisher manning.com</span>
-                    <span class="price-offer">$26.30</span>
-                </div>
+                
             </div>
-            <div class="bookmark-it">Bookmark it</div>
-        </article>
-
-        <div class="load-more">Load More Books</div>
+            <div class="icon_bar">
+                <div >
+                    <a href="http://amazon.com">
+                        <div class='download_btn'>
+							<span class="download-btn-text">Download the Book</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="bookmark-it"><i class="material-icons">library_books</i><br>Bookmark It</div>
+            </div>
+        </div> <!-- /End book container -->
+        <div class="card_icons_container">
+            <div class="card_container">
+                <div class="content_container">
+                    <!--container for book title and author-->
+                    <div class="heading_container">
+                        <div class="heading_text_wrapper">
+                            <div class="heading_text">Eloquent JavaScript: 
+                            </br>
+                            A Modern Introduction to Programming</div>  
+                            <div class="heading_text_small">by <span class="blue_menu_text">Marijn Haverbeke</span>  <span class='follow_btn'>Follow</span>
+                            <span class="heading_grey" >Published on 2015</span><span class="heading_grey">2nd Edition</span></div>                 
+                        </div>
+                    </div>
+                    <div class="description_container">
+                        <div class="description_wrapper">
+                            <p style="">
+                            JavaScript lies at the heart of almost every modern web application. From social apps to
+                            the newest browser based games. Though simple for beginners to pick up and play with, JavaScript is a flexible complex language that you can use to build full scale applications.
+                            </p>
+                            <p style="">
+                            Eloquent JavaScript, 2nd edition dives deep into the JavaScript language to write beautiful, effective code.
+                            </p>
+                            <a href="#" id="read_more"class="blue_menu_text">Read more</a>
+                        </div>
+                    </div>
+                    <div class="ratings_container">
+                       <div class="ratings">
+                            <div class="progress_bar_container" id="orange_text">
+                                <div class="ratings_left" >Easy to follow</div> 
+                                <div class="ratings_right">80%</div>    
+                                <div class="progress_bar"><div class='meter' ><span style="width: 80%" id="orange_bar"></div></span></div>
+                            </div>
+                            <div class="progress_bar_container" id="green_text">
+                                <div class="ratings_left" >Comprehensive</div> 
+                                <div class="ratings_right">75%</div>    
+                                <div class="progress_bar"><div class='meter'><span style="width: 75%" id="green_bar"></div></span></div>
+                            </div>
+                            <div class="progress_bar_container" id="blue_text">
+                                <div class="ratings_left" >Enough examples</div> 
+                                <div class="ratings_right">95%</div>    
+                                <div class="progress_bar"><div class='meter'><span style="width: 95%" id="blue_bar"></div></span></div>
+                            </div>
+                       </div>
+                       
+                       <div class="book_menu">
+                            <div class="menu_item_container menu_item_underline blue_menu_text">
+                                <div class="ratings_left" >Rate the Book</div> 
+                                <div class="ratings_right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>   
+                            </div>
+                            
+                            <div class="menu_item_container menu_item_underline blue_menu_text" >
+                                <div class="ratings_left" >Table of Contents</div> 
+                                <div class="ratings_right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>   
+                            </div>
+                            
+                            <div class="menu_item_container blue_menu_text">
+                                <div class="ratings_left" >Search Inside</div> 
+                                <div class="ratings_right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>   
+                            </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="img_container">
+                    <img class="book_img" src="images/eloquent_javascript.png" alt="Eloquent Javascript">
+                </div>
+                
+            </div>
+            <div class="icon_bar">
+                <div >
+                    <a href="http://amazon.com">
+                        <div class='icon_container'>
+                            <img src="images/gumroad.png" alt="" class='icon_img'><div class='icon_price'> $28.40</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="http://amazon.com" >
+                        <div class='icon_container'>
+                            <img src="images/amazon.png" alt="" class='icon_img'><div class='icon_price'> $29.65</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="http://amazon.com">
+                        <div class='icon_container'>
+                            <img src="images/manning.png" alt="" class='icon_img'><div class='icon_price'> $28.70</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bookmark-it"><i class="material-icons">library_books</i><br>Bookmark It</div>
+            </div>
+        </div> <!-- /End book container -->
+        <div class="card_icons_container">
+            <div class="card_container">
+                <div class="content_container">
+                    <!--container for book title and author-->
+                    <div class="heading_container">
+                        <div class="heading_text_wrapper">
+                            <div class="heading_text">Learning PHP, MySQl & Javascript: With jQuery, 
+                            </br>
+                            CSS & HTML5</div>  
+                            <div class="heading_text_small">by <span class="blue_menu_text">Marijn Haverbeke</span>  <span class='follow_btn'>Follow</span>
+                            <span class="heading_grey" >Published on 2016</span><span class="heading_grey">4th Edition</span></div>                 
+                        </div>
+                    </div>
+                    <div class="description_container">
+                        <div class="description_wrapper">
+                            <p style="">
+                            Build interactive, data-driven websites with the potent combination of open-source technologies and web standards, even if you have only basic HTML knowledge. With
+							this popular hands-on guide, you'll tackle dynamic web programming with the help of today's core technologies: PHP, MySQL, JavaScript, jQuery, CSS and HTML5.
+                            </p>
+                            <p style="">
+                            Eloquent JavaScript, 2nd edition dives deep into the JavaScript language to write beautiful, effective code.
+                            </p>
+                            <a href="#" id="read_more"class="blue_menu_text">Read more</a>
+                        </div>
+                    </div>
+                    <div class="ratings_container">
+                       <div class="ratings">
+                            <div class="progress_bar_container" id="orange_text">
+                                <div class="ratings_left" >Easy to follow</div> 
+                                <div class="ratings_right">80%</div>    
+                                <div class="progress_bar"><div class='meter' ><span style="width: 80%" id="orange_bar"></div></span></div>
+                            </div>
+                            <div class="progress_bar_container" id="green_text">
+                                <div class="ratings_left" >Comprehensive</div> 
+                                <div class="ratings_right">75%</div>    
+                                <div class="progress_bar"><div class='meter'><span style="width: 75%" id="green_bar"></div></span></div>
+                            </div>
+                            <div class="progress_bar_container" id="blue_text">
+                                <div class="ratings_left" >Enough examples</div> 
+                                <div class="ratings_right">95%</div>    
+                                <div class="progress_bar"><div class='meter'><span style="width: 95%" id="blue_bar"></div></span></div>
+                            </div>
+                       </div>
+                       
+                       <div class="book_menu">
+                            <div class="menu_item_container menu_item_underline blue_menu_text">
+                                <div class="ratings_left" >Rate the Book</div> 
+                                <div class="ratings_right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>   
+                            </div>
+                            
+                            <div class="menu_item_container menu_item_underline blue_menu_text" >
+                                <div class="ratings_left" >Table of Contents</div> 
+                                <div class="ratings_right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>   
+                            </div>
+                            
+                            <div class="menu_item_container blue_menu_text">
+                                <div class="ratings_left" >Search Inside</div> 
+                                <div class="ratings_right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>   
+                            </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="img_container">
+                    <img class="book_img" src="images/lrg.jpg" alt="Learn_Php_MySql_Javascript">
+                </div>
+                
+            </div>
+            <div class="icon_bar">
+                <div >
+                    <a href="http://amazon.com">
+                        <div class='icon_container'>
+                            <img src="images/gumroad.png" alt="" class='icon_img'><div class='icon_price'> $26.30</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="http://amazon.com" >
+                        <div class='icon_container'>
+                            <img src="images/amazon.png" alt="" class='icon_img'><div class='icon_price'> $24.80</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="http://amazon.com">
+                        <div class='icon_container'>
+                            <img src="images/manning.png" alt="" class='icon_img'><div class='icon_price'> $25.20</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bookmark-it"><i class="material-icons">library_books</i><br>Bookmark It</div>
+            </div>
+        </div> <!-- /End book container -->
     </div>
 
 
+    <div class="load-more">Load More Books</div>
 
 </section>
 <footer>
