@@ -12,7 +12,40 @@
 	<link rel="stylesheet" href="css/generic-styles.css">
     <link rel="stylesheet" href="css/headerfooter.css">
     <link rel="stylesheet" href="css/cards.css">
-
+	<link rel="stylesheet" href="css/tabs.css">
+	<script src="js/data_objects.js"></script>
+	<script>
+		window.onload = function(){	
+				document.getElementById("heading1").innerHTML=entireData.books[0].title;
+				document.getElementById("author1").innerHTML=entireData.books[0].author;
+				document.getElementById("publish1").innerHTML=entireData.books[0].published;
+				document.getElementById("edition1").innerHTML=entireData.books[0].edition;
+				document.getElementById("desc1").innerHTML=entireData.books[0].description;
+				document.getElementById("img1").src=entireData.books[0].coverImage;
+				
+				document.getElementById("heading2").innerHTML=entireData.books[1].title;
+				document.getElementById("author2").innerHTML=entireData.books[1].author;
+				document.getElementById("publish2").innerHTML=entireData.books[1].published;
+				document.getElementById("edition2").innerHTML=entireData.books[1].edition;
+				document.getElementById("desc2").innerHTML=entireData.books[1].description;
+				document.getElementById("img2").src=entireData.books[1].coverImage;
+				
+				document.getElementById("heading3").innerHTML=entireData.books[2].title;
+				document.getElementById("author3").innerHTML=entireData.books[2].author;
+				document.getElementById("publish3").innerHTML=entireData.books[2].published;
+				document.getElementById("edition3").innerHTML=entireData.books[2].edition;
+				document.getElementById("desc3").innerHTML=entireData.books[2].description;
+				document.getElementById("img3").src=entireData.books[2].coverImage;
+				
+				document.getElementById("heading4").innerHTML=entireData.books[0].title;
+				document.getElementById("author4").innerHTML=entireData.books[0].author;
+				document.getElementById("publish4").innerHTML=entireData.books[0].published;
+				document.getElementById("edition4").innerHTML=entireData.books[0].edition;
+				document.getElementById("desc4").innerHTML=entireData.books[0].description;
+				document.getElementById("img4").src=entireData.books[0].coverImage;
+	
+			}
+	</script>
 </head>
 <body>
 <header class="wrapper">
@@ -39,7 +72,6 @@
 </header>
 
 <section class="main-container">
-
     <div class="container">
     	<div class="card_icons_container">
     		<div class="card_container">
@@ -47,22 +79,14 @@
     				<!--container for book title and author-->
     				<div class="heading_container">
     					<div class="heading_text_wrapper">
-    						<div class="heading_text">Eloquent JavaScript: 
-    						</br>
-    						A Modern Introduction to Programming</div>	
-    						<div class="heading_text_small">by <span class="blue_menu_text">Marijn Haverbeke</span>  <span class='follow_btn'>Follow</span>
-    						<span class="heading_grey" >Published on 2015</span><span class="heading_grey">2nd Edition</span></div>					
+    						<div class="heading_text" id ="heading1"></div>	
+    						<div class="heading_text_small">by <span class="blue_menu_text" id="author1"></span>  <span class='follow_btn'>Follow</span>
+    						<span class="heading_grey" id ="publish1"></span><span class="heading_grey" id = "edition1"></span></div>					
     					</div>
     				</div>
     				<div class="description_container">
-    					<div class="description_wrapper">
-    						<p style="">
-    						JavaScript lies at the heart of almost every modern web application. From social apps to
-    						the newest browser based games. Though simple for beginners to pick up and play with, JavaScript is a flexible complex language that you can use to build full scale applications.
-    						</p>
-    						<p style="">
-    						Eloquent JavaScript, 2nd edition dives deep into the JavaScript language to write beautiful, effective code.
-    						</p>
+    					<div class="description_wrapper" id ="desc1">
+    						
     						<a href="#" id="read_more"class="blue_menu_text">Read more</a>
     					</div>
     				</div>
@@ -104,10 +128,11 @@
     				</div>
     			</div>
     			<div class="img_container">
-    				<img class="book_img" src="images/eloquent_javascript.png" alt="Eloquent Javascript">
-    			</div>
-    			
+    				<!--<img class="book_img" src="images/eloquent_javascript.png" alt="Eloquent Javascript" id="img1">-->
+    				<img class="book_img"  alt="Eloquent Javascript" id="img1">
+    			</div> 			
     		</div>
+			
             <div class="icon_bar">
                 <div >
                     <a href="http://amazon.com">
@@ -141,23 +166,14 @@
                     <!--container for book title and author-->
                     <div class="heading_container">
                         <div class="heading_text_wrapper">
-                            <div class="heading_text">Javascript and JQuery: Interactive Front-End 
-                            </br>
-                            Web Development</div>  
-                            <div class="heading_text_small">by <span class="blue_menu_text">Marijn Haverbeke</span>  <span class='follow_btn'>Follow</span>
-                            <span class="heading_grey" >Published on 2016</span><span class="heading_grey">1st Edition</span></div>                 
+                            <div class="heading_text" id = 'heading2'></div>  
+                            <div class="heading_text_small">by <span class="blue_menu_text" id='author2'></span>  <span class='follow_btn'>Follow</span>
+                            <span class="heading_grey" id = 'publish2' >Published on 2016</span><span class="heading_grey" id ='edition2'</span></div>                 
                         </div>
                     </div>
                     <div class="description_container">
-                        <div class="description_wrapper">
-                            <p style="">
-							In JavaScript & jQuery renowned author Jon Duckett dis-cards the traditional programming book template and approaches writing code in a more relevant, 
-							less intimidating way.
-                            </p>
-                            <p style="">
-                            Full-color and packed with instructional graphics and photos, his books have gained a loyal following by illustrating programming in a way both instructive for newcomers and invaluable for seasoned coders.
-                            </p>
-                            <a href="#" id="read_more"class="blue_menu_text">Read more</a>
+                        <div class="description_wrapper" id='desc2'>
+                               
                         </div>
                     </div>
                     <div class="ratings_container">
@@ -198,8 +214,28 @@
                     </div>
                 </div>
                 <div class="img_container">
-                    <img class="book_img" src="images/javascript_jq.png" alt="Eloquent Javascript">
+                    <img class="book_img"  alt="Eloquent Javascript" id='img2'>
                 </div>
+					<article class="tabs" style="display:none">
+					<div class="close"><i class= "fa fa-times"></i></div>
+					<section id="tab1">
+						<h2><a href="#tab1">Tab 1</a></h2>
+						<p>This content appears on tab 1.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacinia elit nec mi ornare et viverra massa pharetra. Phasellus mollis, massa sed suscipit pharetra, nunc tellus sagittis nunc, et tempus dui lorem a ipsum.</p>
+
+					</section>					
+					<section id="tab2">
+						<h2><a href="#tab2">Tab 2</a></h2>
+						<p>This content appears on tab 2.</p>
+						<p>Fusce ullamcorper orci vel turpis vestibulum eu congue nisl euismod. Maecenas euismod, orci non tempus fermentum, leo metus lacinia lacus, nec ultrices quam ligula ac leo. Quisque tortor neque, vulputate quis ultricies ut, rhoncus mollis metus.</p>
+					</section>			
+					<section id="tab3">
+						<h2><a href="#tab3">Tab 3</a></h2>
+						<p>This content appears on tab 3.</p>
+						<p>Sed et diam eu ipsum scelerisque laoreet quis in nibh. Proin sodales augue lectus. Maecenas a lorem a mi congue pharetra. Sed sed risus in nisi venenatis condimentum. Donec ac consectetur arcu. Integer urna neque, rutrum at pretium eu.</p>
+
+					</section>
+				</article>
                 
             </div>
             <div class="icon_bar">
@@ -219,23 +255,14 @@
                     <!--container for book title and author-->
                     <div class="heading_container">
                         <div class="heading_text_wrapper">
-                            <div class="heading_text">Eloquent JavaScript: 
-                            </br>
-                            A Modern Introduction to Programming</div>  
-                            <div class="heading_text_small">by <span class="blue_menu_text">Marijn Haverbeke</span>  <span class='follow_btn'>Follow</span>
-                            <span class="heading_grey" >Published on 2015</span><span class="heading_grey">2nd Edition</span></div>                 
+                            <div class="heading_text" id='heading3'></div>  
+                            <div class="heading_text_small">by <span class="blue_menu_text" id='author3'></span>  <span class='follow_btn'>Follow</span>
+                            <span class="heading_grey" id='publish3'></span><span class="heading_grey" id='edition3'></span></div>                 
                         </div>
                     </div>
                     <div class="description_container">
-                        <div class="description_wrapper">
-                            <p style="">
-                            JavaScript lies at the heart of almost every modern web application. From social apps to
-                            the newest browser based games. Though simple for beginners to pick up and play with, JavaScript is a flexible complex language that you can use to build full scale applications.
-                            </p>
-                            <p style="">
-                            Eloquent JavaScript, 2nd edition dives deep into the JavaScript language to write beautiful, effective code.
-                            </p>
-                            <a href="#" id="read_more"class="blue_menu_text">Read more</a>
+                        <div class="description_wrapper" id='desc3'>
+                            
                         </div>
                     </div>
                     <div class="ratings_container">
@@ -276,9 +303,27 @@
                     </div>
                 </div>
                 <div class="img_container">
-                    <img class="book_img" src="images/eloquent_javascript.png" alt="Eloquent Javascript">
+                    <img class="book_img"  alt="Eloquent Javascript" id='img3'>
                 </div>
-                
+                <article class="tabs" style="display:none">
+					<div class="close"><i class= "fa fa-times"></i></div>
+					<section id="tab4">
+						<h2><a href="#tab4">Search Inside</a></h2>
+						<p>This content appears on tab 1.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacinia elit nec mi ornare et viverra massa pharetra. Phasellus mollis, massa sed suscipit pharetra, nunc tellus sagittis nunc, et tempus dui lorem a ipsum.</p>
+
+					</section>					
+					<section id="tab5">
+						<h2><a href="#tab5">Table of Contents</a></h2>
+						<p>This content appears on tab 2.</p>
+						<p>Fusce ullamcorper orci vel turpis vestibulum eu congue nisl euismod. Maecenas euismod, orci non tempus fermentum, leo metus lacinia lacus, nec ultrices quam ligula ac leo. Quisque tortor neque, vulputate quis ultricies ut, rhoncus mollis metus.</p>
+					</section>			
+					<section id="tab6">
+						<h2><a href="#tab6">Rate the book</a></h2>
+						<p>This content appears on tab 3.</p>
+						<p>Sed et diam eu ipsum scelerisque laoreet quis in nibh. Proin sodales augue lectus. Maecenas a lorem a mi congue pharetra. Sed sed risus in nisi venenatis condimentum. Donec ac consectetur arcu. Integer urna neque, rutrum at pretium eu.</p>
+					</section>
+				</article>
             </div>
             <div class="icon_bar">
                 <div >
@@ -311,23 +356,14 @@
                     <!--container for book title and author-->
                     <div class="heading_container">
                         <div class="heading_text_wrapper">
-                            <div class="heading_text">Learning PHP, MySQl & Javascript: With jQuery, 
-                            </br>
-                            CSS & HTML5</div>  
-                            <div class="heading_text_small">by <span class="blue_menu_text">Marijn Haverbeke</span>  <span class='follow_btn'>Follow</span>
-                            <span class="heading_grey" >Published on 2016</span><span class="heading_grey">4th Edition</span></div>                 
+                            <div class="heading_text" id='heading4'></div>  
+                            <div class="heading_text_small">by <span class="blue_menu_text" id='author4'></span>  <span class='follow_btn'>Follow</span>
+                            <span class="heading_grey" id='publish4'></span><span class="heading_grey" id='edition4'></span></div>                 
                         </div>
                     </div>
                     <div class="description_container">
-                        <div class="description_wrapper">
-                            <p style="">
-                            Build interactive, data-driven websites with the potent combination of open-source technologies and web standards, even if you have only basic HTML knowledge. With
-							this popular hands-on guide, you'll tackle dynamic web programming with the help of today's core technologies: PHP, MySQL, JavaScript, jQuery, CSS and HTML5.
-                            </p>
-                            <p style="">
-                            Eloquent JavaScript, 2nd edition dives deep into the JavaScript language to write beautiful, effective code.
-                            </p>
-                            <a href="#" id="read_more"class="blue_menu_text">Read more</a>
+                        <div class="description_wrapper" id='desc4'>
+                            
                         </div>
                     </div>
                     <div class="ratings_container">
@@ -368,10 +404,28 @@
                     </div>
                 </div>
                 <div class="img_container">
-                    <img class="book_img" src="images/lrg.jpg" alt="Learn_Php_MySql_Javascript">
+                    <img class="book_img" alt="Learn_Php_MySql_Javascript" id='img4'>
                 </div>
-                
-            </div>
+                <article class="tabs">
+					<div class="close"><i class= "fa fa-times"></i></div>
+					<section id="tab7">
+						<h2><a href="#tab7">Search Inside</a></h2>
+						<p>This content appears on tab 1.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacinia elit nec mi ornare et viverra massa pharetra. Phasellus mollis, massa sed suscipit pharetra, nunc tellus sagittis nunc, et tempus dui lorem a ipsum.</p>
+
+					</section>					
+					<section id="tab8">
+						<h2><a href="#tab8">Table of Contents</a></h2>
+						<p>This content appears on tab 2.</p>
+						<p>Fusce ullamcorper orci vel turpis vestibulum eu congue nisl euismod. Maecenas euismod, orci non tempus fermentum, leo metus lacinia lacus, nec ultrices quam ligula ac leo. Quisque tortor neque, vulputate quis ultricies ut, rhoncus mollis metus.</p>
+					</section>			
+					<section id="tab9">
+						<h2><a href="#tab9">Rate the book</a></h2>
+						<p>This content appears on tab 3.</p>
+						<p>Sed et diam eu ipsum scelerisque laoreet quis in nibh. Proin sodales augue lectus. Maecenas a lorem a mi congue pharetra. Sed sed risus in nisi venenatis condimentum. Donec ac consectetur arcu. Integer urna neque, rutrum at pretium eu.</p>
+					</section>
+				</article>            
+				</div>
             <div class="icon_bar">
                 <div >
                     <a href="http://amazon.com">
